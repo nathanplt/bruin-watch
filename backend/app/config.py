@@ -7,7 +7,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Settings(BaseSettings):
-    app_name: str = "Enroll Notify API"
+    app_name: str = "BruinWatch API"
     environment: str = "production"
 
     # Security

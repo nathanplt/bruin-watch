@@ -1,6 +1,6 @@
 import { jwtVerify, SignJWT } from "jose";
 
-export const SESSION_COOKIE_NAME = "enroll_notify_session";
+export const SESSION_COOKIE_NAME = "bruinwatch_session";
 export const SESSION_TTL_SECONDS = 60 * 60 * 24 * 7;
 
 export type SessionPayload = {

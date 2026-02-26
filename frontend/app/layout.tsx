@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: process.env.NEXT_PUBLIC_APP_NAME || "Enroll Notify",
+  title: process.env.NEXT_PUBLIC_APP_NAME || "BruinWatch",
   description: "Track UCLA COM SCI openings and send email or SMS alerts"
 };
 

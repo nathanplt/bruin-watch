@@ -65,7 +65,7 @@ def to_check_response(*, course: CourseStatus, term: str) -> CheckResponse:
     )
 
 
-app = FastAPI(title="Enroll Notify API", version="1.0.0")
+app = FastAPI(title="BruinWatch API", version="1.0.0")
 
 
 @app.middleware("http")

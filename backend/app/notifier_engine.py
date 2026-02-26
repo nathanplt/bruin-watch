@@ -77,7 +77,7 @@ def send_email(*, settings: "Settings", to_email: str, message: str) -> str:
     if not settings.gmail_sender or not settings.gmail_app_password:
         raise RuntimeError("Missing Gmail config. Set GMAIL_SENDER and GMAIL_APP_PASSWORD.")
 
-    subject = "Enroll Notify: Course Open"
+    subject = "BruinWatch: Course Open"
     email = EmailMessage()
     email["From"] = settings.gmail_sender
     email["To"] = to_email

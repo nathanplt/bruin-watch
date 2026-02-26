@@ -1,10 +1,10 @@
-# Enroll Notify
+# BruinWatch
 
 Automated UCLA COM SCI course enrollment tracker with instant email/SMS alerts.
 
 ## Overview
 
-Enroll Notify monitors UCLA Computer Science course availability and sends instant notifications when courses transition from closed to available (open or waitlist).
+BruinWatch monitors UCLA Computer Science course availability and sends instant notifications when courses transition from closed to available (open or waitlist).
 
 **Key Features:**
 - Real-time web scraping of UCLA enrollment data

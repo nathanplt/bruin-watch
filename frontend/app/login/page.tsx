@@ -41,7 +41,7 @@ export default function LoginPage() {
     <main className="auth-shell">
       <section className="auth-card">
         <div style={{ marginBottom: "2rem" }}>
-          <h1>Enroll Notify</h1>
+          <h1>BruinWatch</h1>
           <p className="muted">Admin dashboard access</p>
         </div>
         {error ? <div className="banner error">{error}</div> : null}
