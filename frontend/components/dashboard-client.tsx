@@ -272,7 +272,8 @@ export default function DashboardClient() {
               required
             />
 
-            <button style={{ width: "100%" }} disabled={statusLoading} type="submit">
+            <button style={{ width: "100%", justifyContent: "center" }} disabled={statusLoading} type="submit">
+              {statusLoading && <span className="spinner" />}
               {statusLoading ? "Checking..." : "Check Status"}
             </button>
           </form>
@@ -329,7 +330,8 @@ export default function DashboardClient() {
               required
             />
 
-            <button style={{ width: "100%" }} disabled={createLoading} type="submit">
+            <button style={{ width: "100%", justifyContent: "center" }} disabled={createLoading} type="submit">
+              {createLoading && <span className="spinner" />}
               {createLoading ? "Creating..." : "Create Notifier"}
             </button>
           </form>
@@ -405,9 +407,11 @@ export default function DashboardClient() {
           </div>
           <div className="row">
             <button className="secondary" disabled={tickLoading || notifiersLoading} onClick={loadNotifiers} type="button">
-              Refresh
+              {notifiersLoading && <span className="spinner" />}
+              {notifiersLoading ? "Refreshing..." : "Refresh"}
             </button>
             <button disabled={tickLoading || notifiersLoading} onClick={runSchedulerTick} type="button">
+              {tickLoading && <span className="spinner" />}
               {tickLoading ? "Running..." : "Run Checks Now"}
             </button>
           </div>
